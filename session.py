@@ -25,7 +25,7 @@ ansi_csi_seq = "".join([
     "\[",            # Left Square Bracket
     "[\x30-\x3f]*",  # Parameter Bytes     -> [0123456789:;<=>?]
     "[\x20-\x2f]*",  # Intermediate Bytes  -> [ !"#$%&'()*+,-./]
-    "[\x40-\x73]",   # Final Byte          -> [@A-Z[\]^_`a-z{|}~] 
+    "[\x40-\x7e]",   # Final Byte          -> [@A-Z[\]^_`a-z{|}~] 
 ])
 
 # Carriage Return with no Line Feed
